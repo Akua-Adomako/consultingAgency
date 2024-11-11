@@ -1,0 +1,259 @@
+#services-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/abt2.jpg') center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+}
+
+.hero-content h1 {
+  font-size: 2.6em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-content p {
+    font-size: 1.1em;
+  }
+}
+
+
+/* Styling for the services overview section */
+.services-section {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.services-section p {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-item {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+.service-item i {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  background-color: #007bff;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    max-width: 100%;
+  }
+}
+
+
+.why-choose-us-section {
+  padding: 60px 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-title p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.reason-item {
+  flex: 1 1 230px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.reason-item:hover {
+  transform: translateY(-10px);
+}
+
+.reason-item i {
+  font-size: 3em;
+  color: #1f78b4;
+  margin-bottom: 15px;
+}
+
+.reason-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.reason-item p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+.service-details-section {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.service-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px;
+  margin: 40px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-image-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service-text-container {
+  flex: 2;
+}
+
+.service-text-container h3 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.service-text-container p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service-text-container h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .service-detail {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .service-image-container {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .service-text-container {
+    flex: 1;
+  }
+
+  .service-text-container h3 {
+    font-size: 1.8em;
+  }
+
+  .service-text-container p {
+    font-size: 1em;
+  }
+
+  .service-text-container h4 {
+    font-size: 1.2em;
+  }
+}
