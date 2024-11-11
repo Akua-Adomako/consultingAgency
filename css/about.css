@@ -1,0 +1,273 @@
+#about-us {
+  position: relative;
+  padding: 0;
+  background-color: rgb(16, 18, 21);
+  text-align: center;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/abt1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay h1 {
+  font-size: 2.6em;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2em;
+  }
+
+  .overlay p {
+    font-size: 1em;
+  }
+}
+
+
+/* Mission & Values Section */
+#mission-values {
+  padding: 80px 0;
+  background: #ffffff;
+  color: #333;
+  text-align: center;
+}
+
+#mission-values .content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+#mission-values .text-section {
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#mission-values h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#mission-values p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+#mission-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+#mission-values ul li {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #555;
+  display: flex;
+  text-align: left;
+}
+
+#mission-values ul li i {
+  color: #2c3e50;
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+
+#mission-values ul li strong {
+  color: #2c3e50;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  #mission-values .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  #mission-values h2 {
+    font-size: 1.6em;
+  }
+
+  #mission-values p,
+  #mission-values ul li {
+    font-size: 1em;
+  }
+}
+
+
+/* Team Overview Section */
+#team-overview {
+  padding: 80px 20px;
+  background: rgb(16, 18, 21);
+  text-align: center;
+  color: white;
+}
+
+#team-overview .team-intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+#team-overview h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#team-overview p {
+  font-size: 1.1em;
+}
+
+#team-overview .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+#team-overview .team-member {
+  background: rgb(26, 29, 34);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#team-overview .team-member:hover {
+  transform: translateY(-10px);
+}
+
+#team-overview .team-member img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#team-overview .team-member h3 {
+  font-size: 1.5em;
+}
+
+#team-overview .team-member p {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+#team-overview .social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#team-overview .social-links li {
+  display: inline;
+}
+
+#team-overview .social-links a {
+  color: #007bff;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+#team-overview .social-links a:hover {
+  color: #0056b3;
+}
+
+.cta-section {
+  background: white;
+  padding: 60px 20px;
+  color: rgb(43, 43, 43);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cta-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.cta-content p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin: 10px 0;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.cta-content .cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: hsl(223, 99%, 61%);
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-content .cta-button:hover {
+  background-color: hsl(223, 99%, 70%);
+  transform: translateY(-5px);
+}
+
+
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 2em;
+  }
+
+  .cta-content p {
+    font-size: 1em;
+  }
+
+  .cta-content .cta-button {
+    font-size: 1em;
+    padding: 12px 25px;
+  }
+}
