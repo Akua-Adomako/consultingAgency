@@ -1,0 +1,126 @@
+/* Blog Hero Section */
+.blog-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/blog.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 90vh;
+}
+
+.blog-hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.blog-hero p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Blog Section */
+.blogs-container-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+}
+
+.blog-card-page {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.blog-card-page:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card-page img {
+  width: 100%;
+  height: 200px !important;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-content p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 60px 20px;
+  background-color: #252525;
+  color: #fff;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: #313131;
+  padding: 20px;
+  border-radius: 8px;
+  font-style: italic;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #eee;
+}
+
+.testimonial span {
+  font-weight: bold;
+  color: #ccc;
+  display: block;
+  margin-top: 5px;
+}
+
+@media(max-width: 768px){
+  .testimonials-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  .blogs-container-page {
+     grid-template-columns: repeat(1, 1fr);
+    }
+  }
