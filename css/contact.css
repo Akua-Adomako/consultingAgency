@@ -1,0 +1,105 @@
+/* Hero Section */
+.contact-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/call.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 90vh;
+}
+
+.contact-hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.contact-hero p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Contact Information Section */
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+}
+
+.info-card {
+  text-align: center;
+  max-width: 300px;
+}
+
+.info-card h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.contact-form-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+@media (max-width:768px){
+  .contact-info {
+    flex-direction: column;
+    }
+}
